@@ -336,14 +336,14 @@ class Player(object):
         yaobuqi = False
         if self.next_move_type in ["yaobuqi","buyao"]:
             yaobuqi = True
-            self.show("Player " + str(self.player_id))
+            #self.show("Player " + str(self.player_id))
             playrecords.records.append([self.player_id, self.next_move_type])
             return last_move_type, last_move, False, yaobuqi
         
         #记录
         end = self.record_move(playrecords)
         #展示
-        self.show("Player " + str(self.player_id))  
+        #self.show("Player " + str(self.player_id))  
         
         return self.next_move_type, self.next_move, end, yaobuqi
     

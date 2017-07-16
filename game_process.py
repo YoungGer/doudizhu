@@ -44,9 +44,9 @@ def game_start(players, playrecords):
         i = i + 1
         #一轮结束
         if i > 2:
-            playrecords.show("=============Round " + str(playround) + " End=============")
+            #playrecords.show("=============Round " + str(playround) + " End=============")
             playround = playround + 1
-            playrecords.show("=============Round " + str(playround) + " Start=============")
+            #playrecords.show("=============Round " + str(playround) + " Start=============")
             i = 0    
     
     return winner
