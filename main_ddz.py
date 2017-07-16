@@ -13,7 +13,7 @@ if __name__=="__main__":
     begin = time.time()
     
     n = 0
-    while(n < 100):
+    while(n < 1000):
         #初始化一副扑克牌类
         cards = Cards()
         
@@ -32,10 +32,10 @@ if __name__=="__main__":
         #游戏进行  
         winner = game_start(players, playrecords)
         #playrecords.show("=============End: Player " + winner + " Win !=============")
-        print "=============End: Player " + winner + " Win !============="
+        #print "=============End: Player " + winner + " Win !============="
         n = n + 1
     print time.time()-begin
-    
+    #1000次游戏2.66700005531
     
     
     
